@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Генератор таблиц</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="Table.js"></script>
+	<script src="01_script.js"></script>
+
+	<style>
+		.cell {
+			border: 1px solid;
+			padding: 1rem;
+			flex: 1 1 30%;
+
+		}
+
+		.cell--heading {
+			background: #e9e9e9;
+		}
+		#form {
+			margin: 20px 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+
+		<h1 class="mb-4">Список студентов</h1>
+
+		<div id="form">
+			<input id="name" placeholder="Введите имя студента"></textarea>
+			<input id="email" placeholder="Введите email"></textarea>
+			<input id="year" placeholder="Введите год поступления"></textarea>
+			<button id="button">Добавить</button>
+		</div>
+
+		<div class="mb-4"  id="users"></div>
+
+	</div>
+</body>
+</html>
